@@ -47,21 +47,21 @@ const routes = [
   //   component: () => import("layouts/SubLayout.vue"),
   //   children: [{ path: "", component: () => import("pages/shop/Shop.vue") }]
   // },
-  {
-    path: "/shop/itemInfo",
-    component: () => import("layouts/SubLayout.vue"),
-    children: [{ path: "", component: () => import("pages/shop/ItemInfo.vue") }]
-  },
   // {
   //   path: "/shop/cart",
   //   component: () => import("layouts/SubLayout.vue"),
   //   children: [{ path: "", component: () => import("pages/shop/Cart.vue") }]
   // },
-  {
-    path: "/shop/checkOut",
-    component: () => import("layouts/SubLayout.vue"),
-    children: [{ path: "", component: () => import("pages/shop/CheckOut.vue") }]
-  },
+  // {
+  //   path: "/shop/itemInfo",
+  //   component: () => import("layouts/SubLayout.vue"),
+  //   children: [{ path: "", component: () => import("pages/shop/ItemInfo.vue") }]
+  // },
+  // {
+  //   path: "/shop/checkOut",
+  //   component: () => import("layouts/SubLayout.vue"),
+  //   children: [{ path: "", component: () => import("pages/shop/CheckOut.vue") }]
+  // },
   // {
   //   path: "/shop/brands",
   //   component: () => import("layouts/SubLayout.vue"),

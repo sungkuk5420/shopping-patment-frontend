@@ -29,7 +29,7 @@ module.exports = function (/* ctx */) {
     css: [
       'app.scss',
       'common.scss',
-      'responsive.scss'
+      // 'responsive.scss'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
