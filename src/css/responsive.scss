@@ -1,0 +1,533 @@
+@charset "UTF-8";
+@import "quasar.variables";
+
+@media screen and (max-width: 1400px) {
+    .sub_content{
+      .sub_content_main{ 
+          grid-column: span 7;
+          .brand_list{
+              grid-template-areas: 'item item item item item';
+          }
+      }
+  }
+
+  .type_eight .grid_container .grid_item.item_2{
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 1000px) {
+    .sub_location{
+        .left{
+            position: static;
+            padding: 7px 0;
+        }
+        .right{
+          padding: 7px 0;
+            text-align: left;
+            .prd_compare{
+                display: none;
+            }
+            label{
+                &:nth-of-type(1){
+                    margin-left:0;
+                }
+            }
+        }
+    }
+    .info_area .item_img{
+      grid-column: span 10;
+    }
+    .info_area .item_info{
+      grid-column: span 10;
+    }
+}
+@media screen and (max-width: 768px) {
+  /* 공통 start */
+  .star_area {
+    margin-top: 5px;
+  }
+  .paging{
+    display:none;
+  }
+  .radio_area {
+    .m_radio_wrap{
+      &~.m_radio_wrap{
+       margin-top:19px; 
+      }
+    }
+  }
+	.grid_container {
+    grid-template-areas: 'item item item item item item' !important;
+    grid-gap: 9px;
+		.grid_item.item_2 {
+			grid-column: span 3;
+		}
+		.grid_item {
+			.item_desc {
+				p {
+					font-size: $font-size-6;
+          line-height: 18px;
+          font-weight:500;
+          color:#4B5057;
+				}
+				.item_title {
+					font-size:11px;
+          line-height: 20px;
+          font-weight:400;
+				}
+				padding: 10px 0;
+        .heart_area {
+          display: none;
+        }
+			}
+			.price_area {
+				.before_price {
+					font-size: $font-size-6;
+					line-height: 16px;
+				}
+				.discount_price {
+					font-size: 18px;
+					line-height: 21px;
+				}
+				margin-top: 7px;
+      }
+      .item_img{
+        .basket{
+          width: 36px;
+          height: 36px;
+          right: 10px;
+          bottom: 10px;
+          img{
+            margin-top: 10px;
+          }
+        }
+      }
+      .left_top{
+        left: 8px;
+        top: 8px;
+      }
+		}
+  }
+  .type_eight{
+    .grid_container{
+      .grid_item.item_2{
+        grid-column: span 3;
+      }
+    }
+  }
+	.grid_area {
+		>.title {
+			margin-top: 30px;
+			font-size: $font-size-4; 
+			line-height: 32px;
+			&::before {
+				top: -22px;
+				height: 20px;
+			}
+		}
+		>.desc {
+			font-size: 11px;
+			line-height: 16px;
+		}
+		.tab_area {
+			.tab_list {
+				display: none;
+			}
+			.m_tab_list {
+				display: block;
+			}
+		}
+	}
+	.sub_location_com {
+		display: none;
+	}
+	#q-app {
+		.type_login {
+			padding: 0 21px;
+			.sub_content_title {
+				padding: 22px 0;
+				margin: 0 -21px;
+				font-weight: 500;
+				font-size: 18px;
+				background: #F9F9F9;
+			}
+			.input_box_area {
+				grid-template-areas: 'item';
+				grid-template-columns: 1fr;
+				margin-top: 23px;
+			}
+      .btn_area {
+        margin-top: 15px !important;
+        button{
+        }
+      }
+		}
+		.type_login.type_register {
+			.btn_area {
+				.btn_orange {
+					position: static;
+					margin-top: 23px;
+				}
+			}
+		}
+	}
+	.input_box_area {
+		grid-gap: 23px;
+		>div {
+      padding: 0;
+      border:0;
+			.title {
+				font-size: 18px;
+				line-height: 21px;
+			}
+			.desc {
+				margin-top: 15px;
+				font-size: $font-size-7;
+				line-height: 14px;
+			}
+		}
+	}
+	.q-field__control {
+		height: 48px !important;
+	}
+	.q-field__label {
+		top: 15px;
+	}
+	.q-field--float {
+		.q-field__label {
+			transform: translateY(-106%) scale(0.75);
+		}
+  }
+  .q-carousel__arrow .q-icon{
+    display:none;
+  }
+  .q-btn--dense.q-btn--round .q-btn__wrapper{
+    min-height: 2em;
+    min-width: 2em;
+  }
+  .q-carousel__navigation--bottom{
+    bottom:0;
+  }
+  .q-carousel__navigation .q-btn{
+    margin:0;
+  }
+  .q-btn .q-icon, .q-btn .q-spinner{
+    font-size: 0.9em;
+  }
+	.input_area {
+		input {
+			height: 48px !important;
+      line-height: 48px !important;
+      
+    }
+    &~.input_area{
+      margin-top: 15px;
+    }
+	}
+	.btn_area {
+		button {
+			padding: 7px 42px;
+			width: 100%;
+			font-size: $font-size-6;
+      line-height: 32px;
+      &.lead_more{
+        margin-top:10px;
+        margin-bottom:50px;
+      }
+		}
+  }
+  /* 서브 공통 */
+  .sub_content{
+      padding:0 21px;
+      .sub_content_main{
+           grid-column: span 10;
+           &.type_info{
+            .info_main{
+              /* about */
+             .about_left{
+               grid-column: span 10;
+               .title{
+                 font-size: 18px;
+                 line-height: 32px;
+               }
+               .desc{
+                 font-size: $font-size-6;
+                 line-height: 20px;
+               }
+               .company_desc{
+                 grid-template-areas: ' item';
+                 margin-top:10px;
+                 > li{
+                   margin-top:20px;
+                     > h4{
+                       font-size: 18px;
+                       line-height: 27px;
+                     }
+                     > p{
+                       font-size: $font-size-5;
+                       line-height: 24px;
+                     }
+                   }
+               }
+               .thanks{
+                 margin-top:30px;
+                 font-size: $font-size-6;
+                 line-height: 20px;
+               }
+             }
+             .about_right{
+                margin-top:60px;
+                grid-column: span 10;
+             }
+             /* about */
+             
+              /* delibery */
+              .info_area{
+                margin-top:30px;
+                > .title{
+                  font-size: 18px;
+                  line-height: 32px;
+                }
+                > .desc{
+                  font-size: $font-size-6;
+                  line-height: 20px;
+                }
+                .info_text_list{
+                  margin-top:7px;
+                  >li{
+                    font-size: $font-size-6;
+                    line-height: 20px;
+                    ul{
+                      padding-left:12px;
+                    } 
+                    &.last{
+                      margin-top:0;
+                  }
+                  }
+                }
+                .btn_area{
+                    > button{
+                      width:auto;
+                      padding: 0 20px;
+                      height:32px;
+                      line-height:32px;
+                    }
+                }
+                .table_area{
+                  margin-top:15px;
+                  .info_table{
+                    th,
+                    td{
+                      padding: 10px;
+                      font-size:12px !important;
+                      line-height: 16px !important;
+                    }
+                    &.type_notice{
+                      display: block;
+                      text-align: left;
+                      border: 0 none;
+                      border-top: 1px solid #D7DADB;
+                      thead{
+                        display: none;
+                      }
+                      tbody{
+                        display: block;
+                        tr{
+                          display: block;
+                          padding: 10px 110px 10px 0;
+                          position: relative;
+                          border-bottom: 1px solid #D7DADB;
+                          td{
+                            display: block;
+                            border: 0 none;
+                            padding: 7px;
+                            &.no{
+                              display: none;
+                            }
+                            &.view{
+                              position:absolute;
+                              right:10px;
+                              top:50%;
+                              transform: translateY(-50%);
+                              padding-left: 20px;
+                              background: url("../assets/img_eyes.png") no-repeat 0 50%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .table_info{
+                  padding: 10px;
+                  > li{
+                    font-size: $font-size-7;
+                    line-height: 16px;
+                    &:last-child{
+                      margin-top:15px;
+                    }
+                  }
+                }
+                .faq_table{
+                  margin-top:25px;
+                  .faq_list{
+                    > li{
+                      > a{
+                        font-size: $font-size-5;
+                        line-height: 24px;
+                        color: $color-gray-10;
+                      }
+                      .faq_more{
+                        .list{
+                          >li{
+                            font-size: $font-size-6;
+                            line-height: 20px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                
+                .sitemap_area{
+                  .site_list{
+                      width: 100%;
+                      > li {
+                          margin-top:26px;
+                          .title{
+                            font-size: 18px;
+                            line-height: 32px;
+                          }
+                          >ul{
+                            margin-top:14px;
+                              li{
+                                  a{
+                                    font-size: $font-size-6;
+                                    line-height: 20px;
+                                  }
+                              }
+                          }
+                      }
+                  }
+                }
+              }
+              &.type_checkbox{
+                .bill_area{
+                  .detail_area {
+                    .checkbox_list {
+                      li{
+                        margin-top: 19px;
+                      }
+                    }
+                  }
+                }
+              }
+              
+              .cart_empty{
+                .empty_desc{
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .btn_area{
+                    button{ 
+                        height: 48px;
+                        line-height: 48px;
+                        font-size: 14px;
+                        line-height: 32px;
+                    }
+                }
+            }
+            }
+           }
+           .brand_list {
+              display: none;
+              grid-template-areas: 'item item item';
+          }
+      }
+  }
+  .sub_banner{
+      padding:0;
+      margin-bottom:40px;
+      .sub_banner_text{
+
+        .title{
+          font-size: $font-size-4;
+          line-height: 48px;
+        }
+        .desc{
+          margin-top:10px;
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      > img{
+        height:182px;
+      }
+  }
+  .sub_location{
+      padding:0 21px;
+      height:auto;
+      .left{
+          display: none;
+      }
+      .right{
+        padding: 13px 0;
+        text-align: center;
+      }
+  }
+
+  
+/* 브랜드 start */
+.brands_wrap{
+  margin:30px auto 0;
+  box-sizing: border-box;
+  .brans_in{
+    .search_area{
+      >input{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: $font-size-6;
+        line-height: 20px;
+      }
+      .search_btn{
+        width:20px;
+        height:20px;
+      }
+    }
+    .alpha_area{
+      display: none;
+    }
+    .alpha_table_area{
+      margin-top:0;
+      .table_depth_1{
+        >li{
+          margin-top:40px;
+          border: 0 none;
+          padding-left: 0;
+          .title{
+            position:static;
+            width: 100%;
+            font-size: $font-size-4;
+            line-height: 32px;
+            color: $color-secondary;
+          }
+          .table_depth_2{
+              padding:14px 0 0;
+              >li{
+                  width:100%;
+                  font-weight: 500;
+                  font-size: $font-size-5;
+                  line-height: 36px;
+                  color: $color-gray-10;
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+            
+/* 브랜드 end */
+}
