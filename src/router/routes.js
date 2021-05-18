@@ -52,11 +52,11 @@ const routes = [
   //   component: () => import("layouts/SubLayout.vue"),
   //   children: [{ path: "", component: () => import("pages/shop/Cart.vue") }]
   // },
-  // {
-  //   path: "/shop/itemInfo",
-  //   component: () => import("layouts/SubLayout.vue"),
-  //   children: [{ path: "", component: () => import("pages/shop/ItemInfo.vue") }]
-  // },
+  {
+    path: "/shop/itemInfo",
+    component: () => import("layouts/SubLayout.vue"),
+    children: [{ path: "", component: () => import("pages/shop/ItemInfo.vue") }]
+  },
   // {
   //   path: "/shop/checkOut",
   //   component: () => import("layouts/SubLayout.vue"),
