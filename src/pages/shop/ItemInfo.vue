@@ -425,116 +425,116 @@ export default {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .info_area .item_img {
-    grid-column: span 10;
-  }
-  .info_area .item_info {
-    grid-column: span 10;
-  }
-}
+// @media screen and (max-width: 1000px) {
+//   .info_area .item_img {
+//     grid-column: span 10;
+//   }
+//   .info_area .item_info {
+//     grid-column: span 10;
+//   }
+// }
 
-@media screen and (max-width: 768px) {
-  .info_area {
-    display: block;
-    margin-top: 0 !important;
-    grid-template-areas: none;
-    // grid-auto-columns: 1fr;
-    // grid-gap: 75px;
-    .item_img {
-      margin: 0 -21px;
-      .bottom {
-        display: none;
-      }
-    }
-    .item_info {
-      .design_type {
-        margin-top: 24px;
-        font-weight: 500;
-        font-size: $font-size-6;
-        line-height: 20px;
-      }
-      .title {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-      }
-      .star_area {
-        margin-top: 13px;
-      }
-      .price_area {
-        margin-top: 11px;
-        .before_price {
-          font-weight: 500;
-          font-size: $font-size-5;
-          line-height: 24px;
-        }
-        .discount_price {
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 40px;
-        }
-      }
-      .item_desc {
-        display: none;
-      }
-      .item_more_info {
-        margin-top: 15px;
-        font-size: $font-size-7;
-        line-height: 24px;
-      }
-      .item_count {
-        height: 48px;
-        font-size: $font-size-5;
-        .count {
-          height: 46px;
-          line-height: 46px;
-          font-size: $font-size-5;
-        }
-        .minus,
-        .plus {
-          width: 48px;
-          height: 46px;
-          line-height: 46px;
-          img {
-            width: 16px;
-          }
-        }
-      }
-      .btn_area {
-        button {
-          margin-top: 10px !important;
-          width: 100% !important;
-          height: 48px !important;
-          line-height: 48px !important;
-          font-size: 14px !important;
-          line-height: 24px !important;
-        }
-      }
-      .social {
-        .first {
-          display: block;
-          margin-bottom: 13px;
-        }
-      }
-    }
-    .info_item_detail {
-      margin-top: 50px;
-      padding-top: 40px;
-      border-top: 1px solid #eaeaea;
-      .detail_desc {
-        font-size: $font-size-5;
-        line-height: 40px;
-      }
-      .detail_desc_2 {
-        margin-top: 20px;
-        font-size: $font-size-6;
-        line-height: 20px;
-      }
-      .detail_img_area {
-        margin-top: 20px;
-      }
-    }
-  }
-}
-</style>
+// @media screen and (max-width: 768px) {  
+//   .info_area {
+//     display: block;
+//     margin-top: 0 !important;
+//     grid-template-areas: none;
+//     // grid-auto-columns: 1fr;
+//     // grid-gap: 75px;
+//     .item_img {
+//       margin: 0 -21px;
+//       .bottom {
+//         display: none;
+//       }
+//     }
+//     .item_info {
+//       .design_type {
+//         margin-top: 24px;
+//         font-weight: 500;
+//         font-size: $font-size-6;
+//         line-height: 20px;
+//       }
+//       .title {
+//         font-weight: 500;
+//         font-size: 18px;
+//         line-height: 28px;
+//       }
+//       .star_area {
+//         margin-top: 13px;
+//       }
+//       .price_area {
+//         margin-top: 11px;
+//         .before_price {
+//           font-weight: 500;
+//           font-size: $font-size-5;
+//           line-height: 24px;
+//         }
+//         .discount_price {
+//           font-weight: bold;
+//           font-size: 18px;
+//           line-height: 40px;
+//         }
+//       }
+//       .item_desc {
+//         display: none;
+//       }
+//       .item_more_info {
+//         margin-top: 15px;
+//         font-size: $font-size-7;
+//         line-height: 24px;
+//       }
+//       .item_count {
+//         height: 48px;
+//         font-size: $font-size-5;
+//         .count {
+//           height: 46px;
+//           line-height: 46px;
+//           font-size: $font-size-5;
+//         }
+//         .minus,
+//         .plus {
+//           width: 48px;
+//           height: 46px;
+//           line-height: 46px;
+//           img {
+//             width: 16px;
+//           }
+//         }
+//       }
+//       .btn_area {
+//         button {
+//           margin-top: 10px !important;
+//           width: 100% !important;
+//           height: 48px !important;
+//           line-height: 48px !important;
+//           font-size: 14px !important;
+//           line-height: 24px !important;
+//         }
+//       }
+//       .social {
+//         .first {
+//           display: block;
+//           margin-bottom: 13px;
+//         }
+//       }
+//     }
+//     .info_item_detail {
+//       margin-top: 50px;
+//       padding-top: 40px;
+//       border-top: 1px solid #eaeaea;
+//       .detail_desc {
+//         font-size: $font-size-5;
+//         line-height: 40px;
+//       }
+//       .detail_desc_2 {
+//         margin-top: 20px;
+//         font-size: $font-size-6;
+//         line-height: 20px;
+//       }
+//       .detail_img_area {
+//         margin-top: 20px;
+//       }
+//     }
+//   }
+// }
+// </style>
