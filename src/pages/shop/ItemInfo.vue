@@ -81,7 +81,9 @@
                 </span>
               </div>
               <div class="btn_area">
-                <button type="button" class="type_dark">Payment</button>
+                <button type="button" class="type_dark" @click="openCart">
+                  add cart
+                </button>
                 <button type="button" class="type_gray">add to wishlist</button>
               </div>
               <ul class="social">
@@ -159,6 +161,10 @@ export default {
     };
   },
   methods: {
+    openCart() {
+      let target = document.getElementById("shoppingList");
+      target.classList.add("active");
+    },
     itemPlus() {
       // 카운트 증가
       this.item1000Count++;
@@ -434,7 +440,7 @@ export default {
 //   }
 // }
 
-// @media screen and (max-width: 768px) {  
+// @media screen and (max-width: 768px) {
 //   .info_area {
 //     display: block;
 //     margin-top: 0 !important;
@@ -537,4 +543,5 @@ export default {
 //     }
 //   }
 // }
-// </style>
+//
+</style>
