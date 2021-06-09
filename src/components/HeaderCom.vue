@@ -182,7 +182,7 @@
           </a>
         </li>
         <li class="off">
-          <a href="#">
+          <a href="#" @click="movePage('/account/login')">
             <img src="~assets/ico_user.png" alt="사용자" />
           </a>
         </li>

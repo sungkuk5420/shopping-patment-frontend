@@ -4,35 +4,35 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [{ path: "", component: () => import("pages/Index.vue") }]
   },
-  // {
-  //   path: "/account/login",
-  //   component: () => import("layouts/MainLayout.vue"),
-  //   children: [{ path: "", component: () => import("pages/account/Login.vue") }]
-  // },
-  // {
-  //   path: "/account/findPassword",
-  //   component: () => import("layouts/MainLayout.vue"),
-  //   children: [
-  //     { path: "", component: () => import("pages/account/FindPassword.vue") }
-  //   ]
-  // },
-  // {
-  //   path: "/account/register",
-  //   component: () => import("layouts/MainLayout.vue"),
-  //   children: [
-  //     { path: "", component: () => import("pages/account/register.vue") }
-  //   ]
-  // },
-  // {
-  //   path: "/account/registerComplete",
-  //   component: () => import("layouts/MainLayout.vue"),
-  //   children: [
-  //     {
-  //       path: "",
-  //       component: () => import("pages/account/RegisterComplete.vue")
-  //     }
-  //   ]
-  // },
+  {
+    path: "/account/login",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/account/Login.vue") }]
+  },
+  {
+    path: "/account/findPassword",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/account/FindPassword.vue") }
+    ]
+  },
+  {
+    path: "/account/register",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/account/register.vue") }
+    ]
+  },
+  {
+    path: "/account/registerComplete",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        component: () => import("pages/account/RegisterComplete.vue")
+      }
+    ]
+  },
   // {
   //   path: "/oauth/yahoo/sucess/mobile",
   //   component: () =>
