@@ -20,7 +20,7 @@ const routes = [
     path: "/account/register",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/account/register.vue") }
+      { path: "", component: () => import("pages/account/Register.vue") }
     ]
   },
   {
